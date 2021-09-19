@@ -37,7 +37,7 @@ Route::get('/about', function () {
 Route::get('/blog', [PostController::class,'index']);
 
 //halaman single post
-Route::get('posts/{slug}',[PostController::class,'show']);  //{slug} = wildcard,untuk ngambil isi apapun dari slash nya
+Route::get('posts/{post:slug}',[PostController::class,'show']);  //{slug} = wildcard,untuk ngambil isi apapun dari slash nya
        
 
 
